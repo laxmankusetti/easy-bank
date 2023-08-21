@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Public Sans', sans-serif;
+}
+
+.page{
+    width: 100vw;
+    height: auto;
+    background-color: hsl(0, 0%, 96%);
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+}
+
+.nav-items{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+}
+
+.request{
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+}
+
+
+.first{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(0, 0%, 98%);
+    padding-bottom: 50px;
+}
+
+.first-cont{
+    width: 30%;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.first-cont h1{
+    font-weight: 500;
+    font-size: 2.5em;
+    color: hsl(233, 26%, 24%);
+    margin-bottom: 20px;
+}
+.first-cont p{
+    font-size: 0.9em;
+    color: hsl(233, 8%, 62%);
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.first-cont h1 span{
+    display: block;
+}
+
+.first-mobiles{
+    width: 50%;
+    height: 75vh;
+    background-image: url('./images/bg-intro-desktop.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.first-mobiles img{
+    width: 100%;
+}
+
+.second{
+    width: 85%;
+    margin: auto;
+    background-color: hsl(0, 0%, 96%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.second-cont{
+    width: 50%;
+}
+
+.second-cont p{
+    font-size: 0.9em;
+    color: hsl(233, 8%, 62%);
+    margin-top: 30px;
+    line-height: 20px;
+}
+
+.second-cont h2{
+    font-weight: 500;
+    color: hsl(233, 26%, 24%);
+    font-size: 2em;
+}
+
+.services{
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service{
+    width: 20%;
+}
+
+.service img{
+    margin-bottom: 30px;
+}
+
+.service p{
+    font-size: 0.75em;
+    color: hsl(233, 8%, 62%);
+    line-height: 20px;
+}
+
+.service h4{
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.third{
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.third h2{
+    font-weight: 500;
+    font-size: 2em;
+    color: hsl(233, 26%, 24%);
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.articles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.article{
+    width: 20%;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.article img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#short{
+    height: 47%;
+}
+
+.article small{
+    font-size: 0.6em;
+    color: hsl(233, 8%, 62%);
+    display: block;
+    padding: 15px;
+}
+
+.article h5{
+    font-weight: 500;
+    color: hsl(233, 26%, 24%);
+    font-size: 1em;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.article h5:hover{
+    color:hsl(136, 65%, 51%);
+}
+.article p{
+    color: hsl(233, 8%, 62%);
+    font-size: 0.8em;
+    padding: 0 15px;
+}
+
+footer{
+    width: 100%;
+    background-color: hsl(233, 26%, 24%);
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.part1 a{
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.part1 .nav1, .part1 .nav2{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.part1{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.part1 div{
+    width: 50%;
+}
+
+.social-icons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.part2{
+    padding-top: 25px;
+}
+
+.part2 small{
+    color: hsl(233, 8%, 62%);
+    display: block;
+    margin-top: 40px;
+}
+
+.logo{
+    width: max-content;
+    height: auto;
+    position: relative;
+}
+
+.logo h3{
+    color: white;
+    position: absolute;
+    top: -3px;
+    left: 30px;
+}
+
+#hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .nav-items{
+        display: none;
+    }
+
+    .request{
+        display: none;
+    }
+
+    .navbar{
+        justify-content: space-between;
+    }
+
+    #hamburger{
+        display: block;
+    }
+
+    .first-cont{
+        width: 80%;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin: auto;
+        order: 1;
+    }
+
+    .first{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-mobiles{
+        width: 100%;
+        height: 75vh;
+        background-image: url('./images/bg-intro-mobile.svg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .second{
+        width: 80%;
+        margin: auto;
+    }
+
+    .second-cont{
+        width: 100%;
+    }
+
+    .second-cont h2{
+        width: 65%;
+        margin: auto;
+    }
+
+    .second-cont p{
+        text-align: center;
+    }
+
+    .services{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service{
+        width: 100%;
+        text-align: center;
+    }
+
+    .service img{
+        margin-top: 50px;
+    }
+
+    .third{
+        width: 100%;
+        background-color: hsl(0, 0%, 98%);
+    }
+    
+    .third h2{
+        text-align: center;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    
+    .articles{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .article{
+        width: 100%;
+        background-color: hsl(0, 0%, 100%);
+        margin: auto;
+    }
+
+    .article img{
+        margin-top: 50px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .part1 .nav1, .part1 .nav2{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .part1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part1 div{
+        width: 100%;
+        text-align: center;
+    }
+    
+    .logo h3{
+        top: -3px;
+        left: 140px;
+    }
+    
+    .part1 div .social-icons{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .part2{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #request{
+        display: block;
+       width: 150px;
+       height: 40px;
+       border-radius: 25px;
+       margin: auto;
+    }
+
+    .request{
+        padding: 0 0;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+}
