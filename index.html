@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" href="./style.css">
   <title>Easybank landing page</title>
+  <script src="./script.js" defer></script>
 </head>
 <body>
   <div class="page">
+    <div class="mobile-navigation">
+      <a href="/">Home</a>
+      <a href="/">About</a>
+      <a href="/">Contcat</a>
+      <a href="/">Blog</a>
+      <a href="/">Careers</a>
+    </div>
     <header>
       <nav class="navbar">
         <img src="./images/logo.svg" alt="branding-logo" height="25px">
@@ -19,7 +27,8 @@
           <a href="/">Careers</a>
         </div>
         <a href="/" class="request">Request Invite</a>
-        <img src="./images/icon-hamburger.svg" alt="hamburger-menu" id="hamburger" height="15px" width="30px">
+        <img src="./images/icon-hamburger.svg" alt="hamburger-menu" id="hamburger" height="15px" width="30px" onclick="handleClick()">
+        <img src="./images/icon-close.svg" alt="close-icon" id="close" width="25px" height="25px" onclick="closeMenu()">
       </nav>
     </header>
     <main>

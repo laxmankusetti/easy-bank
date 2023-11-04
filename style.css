@@ -31,6 +31,23 @@
 .nav-items a{
     text-decoration: none;
     color: hsl(233, 8%, 62%);
+    position: relative;
+}
+
+.nav-items a::before{
+    content: '';
+    width: 0;
+    height: 3px;
+    border-radius: 3px;
+    background-image: linear-gradient(hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    position: absolute;
+    top: 20px;
+    left: 0;
+    transition: 0.5s ease;
+}
+
+.nav-items a:hover::before{
+    width: 100%;
 }
 
 .request{
@@ -260,6 +277,14 @@ footer{
     display: none;
 }
 
+#close{
+    display: none;
+}
+
+.mobile-navigation{
+    display: none;
+}
+
 @media screen and (max-width: 500px){
     .nav-items{
         display: none;
@@ -415,4 +440,25 @@ footer{
         padding-top: 10px;
     }
 
+    .mobile-navigation{
+        display: none;
+        width: 90%;
+        height: 40vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        position: absolute;
+        left: 20px;
+        top: 100px;
+        background-color: white;
+        border-radius: 5px;
+        
+    }
+
+    .mobile-navigation a{
+        text-decoration: none;
+        color: hsl(233, 8%, 32%);
+        font-size: 1.5em;
+    }
 }
